@@ -15,16 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void panggil(View view) {
-        String nomor = "09667347" ;
-        Intent panggil = new Intent(Intent. ACTION_DIAL);
-        panggil.setData(Uri. fromParts("tel",nomor,null));
+        String nomor = "081379663991";
+        Intent panggil = new Intent(Intent.ACTION_DIAL);
+        panggil.setData(Uri.fromParts("tel", nomor, null));
         startActivity(panggil);
-
     }
     public void buka(View view) {
-        String url = "https://badoystudio.com" ;
-        Intent bukabrowser = new Intent(Intent. ACTION_VIEW);
-        bukabrowser.setData(Uri. parse(url));
+        String url ="https://badoystudio.com";
+        Intent bukabrowser = new Intent(Intent.ACTION_VIEW);
+        bukabrowser.setData(Uri.parse(url));
         startActivity(bukabrowser);
     }
     public void tentang(View view) {
